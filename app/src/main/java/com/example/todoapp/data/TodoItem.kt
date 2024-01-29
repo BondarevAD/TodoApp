@@ -1,11 +1,19 @@
 package com.example.todoapp.data
 
-import java.util.Date
+import androidx.room.Entity
+import androidx.room.PrimaryKey
+import java.time.LocalDate
+import java.util.UUID
 
+@Entity(tableName = "todos")
 data class TodoItem(
-    val id: String,
-    val isDone: Boolean,
-    val creationDate: Date,
-    val editDate: Date?,
-    val priority: Boolean
+    @PrimaryKey(autoGenerate = true) val id: Long? = null,
+    val text: String,
+    var isDone: Boolean,
+    val creationDate: LocalDate,
+    val deadline: LocalDate? = null,
+    val changeDate: LocalDate,
+    val importance: Boolean
 )
+
+

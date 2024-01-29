@@ -2,6 +2,11 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="labelTertiary">#4D000000</color>
+    <color name="labelDisable">#26000000</color>
     <color name="backPrimary">#F7F6F2</color>
+    <color name="blue">#007AFF</color>
+    <color name="blueLight">#64A5EC</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="red">#FF3B30</color>
+    <color name="green">#34C759</color>
 </resources>
